@@ -1,0 +1,349 @@
+ //覆盖一些element-ui样式
+
+ .el-breadcrumb__inner, .el-breadcrumb__inner a{
+  font-weight: 400!important;
+}
+
+ .el-upload {
+   input[type="file"] {
+     display: none !important;
+   }
+ }
+
+ .el-upload__input {
+   display: none;
+ }
+
+ .cell {
+   .el-tag {
+     margin-right: 0px;
+   }
+ }
+
+ .small-padding {
+   .cell {
+     padding-left: 5px;
+     padding-right: 5px;
+   }
+ }
+
+ .fixed-width{
+  .el-button--mini{
+    padding: 7px 10px;
+    width: 60px;
+  }
+ }
+
+ .status-col {
+   .cell {
+     padding: 0 10px;
+     text-align: center;
+     .el-tag {
+       margin-right: 0px;
+     }
+   }
+ }
+
+ //暂时性解决dialog 问题 https://github.com/ElemeFE/element/issues/2461
+ .el-dialog {
+   transform: none;
+   left: 0;
+   position: relative;
+   margin: 0 auto;
+ }
+
+ //文章页textarea修改样式
+ .article-textarea {
+   textarea {
+     padding-right: 40px;
+     resize: none;
+     border: none;
+     border-radius: 0px;
+     border-bottom: 1px solid #bfcbd9;
+   }
+ }
+
+ //element ui upload
+ .upload-container {
+   .el-upload {
+     width: 100%;
+     .el-upload-dragger {
+       width: 100%;
+       height: 200px;
+     }
+   }
+ }
+ 
+ //设置el-form-item label的固定大小
+  .demo-form-inline {
+    text-align: left;
+    position: relative;
+    .el-form-item {
+      width: 23.5%;
+      text-align: left;
+      margin-right: 0;
+      margin-bottom: 5px;
+      .el-form-item__label {
+        width: 86px;
+        font-size: 12px;
+      }
+    }
+    .two-input{
+      width: 41%;
+    }
+    .dateitem{
+        width: 46%;
+        .el-col-2{
+            text-align: center;
+        }
+    }
+  }
+/* 一行三列表单重置样式 */
+.tab-card-item{
+  .demo-form-inline {
+    text-align: left;
+    position: relative;
+    .el-form-item {
+      width: 33%;
+      text-align: left;
+      margin-right: 0;
+      margin-bottom: 16px;
+      .el-form-item__label {
+        width: 121px;
+        font-size: 12px;
+      }
+    }
+  }
+}
+
+.inner-small-input {
+  .el-form-item {
+    width: 60%;
+    margin: 0;
+  }
+}
+  .el-tabs__header{
+    margin: 0 ;
+  }
+  
+  /* ele btn css reset*/
+    .el-button:focus,
+    .el-button:hover {
+      color: #fff;
+      background-color: #4c84ff;
+    }
+    .el-button--mini {
+      border-radius: 4px;
+      border-color: #4c84ff;
+      color: #4c84ff;
+      padding-left: 28px;
+      padding-right: 28px;
+    }
+  /* tab切换重置tab title */
+    .el-tabs__item{
+      color: #666666;
+    }
+
+  //form两级连着表单 修改大小
+  .interver-selection{
+    .el-form-item {
+      width: 46%;
+    }
+  }
+  .el-input__inner{
+      padding: 0 30px 0 15px;
+  }
+.customer-list-area .el-table .cell{
+    white-space: nowrap;
+}
+.el-dialog__body .demo-form-inline .el-form-item{
+    width: 32%;
+}
+.vehicleInsuranceList .el-dialog__body .demo-form-inline .el-form-item .el-form-item__label{width: 180px;}
+.intermediaries .demo-form-inline .el-form-item .el-form-item__label{width: 125px;}
+.el-form-item{
+    margin-bottom: 5px;
+}
+.el-button--small, .el-button--small.is-round{
+    padding: 0;
+}
+.el-message-box__btns .el-button--small{
+    padding:8px 10px;
+}
+.el-table--medium{
+    td,th{
+        padding: 9px 0;
+        font-size: $twelve;
+    }
+}
+.el-form-item__error{
+    position: relative;
+}
+
+.el-form-item__label{font-size: $twelve;}
+.form-list-box{padding: 10px;background: #fff;}
+.el-dialog__body{padding: 10px 15px;}
+.el-button--medium,.el-button--medium.is-round{padding:8px 10px;font-size: $twelve;}
+.el-button--primary,.el-button--primary.is-round{padding: 8px 10px;font-size: $twelve;}
+.el-button--primary{
+    background: #fff;
+    color: #4c84ff;
+}
+.el-dialog__title{font-size: 16px;}
+.el-button--mini, .el-button--mini.is-round{padding: 7px 15px;}
+.el-select-dropdown__item{
+    font-size: $twelve;
+    height: 30px;
+    line-height: 30px;
+    padding: 0 10px;
+}
+.el-input__inner{
+    padding: 0 30px 0 10px;
+}
+.el-date-picker__header-label{
+    font-size: 14px;
+}
+.el-pagination .el-select .el-input .el-input__inner{
+    line-height: 28px;
+}
+.el-date-table td{
+    padding: 2px 0;
+}
+.el-input--suffix .el-input__inner{
+    padding-right: 22px;
+}
+
+
+
+/* 侧边栏sidebar active 添加 伪类:after  */
+.router-link-exact-active {
+  .is-active{
+    position: relative;
+    ::after {
+      position: absolute;
+      right: 0px;
+      top:  16px;
+      content:  '';
+      width:0;
+      border-width: 12px;
+      border-style: solid;
+      border-color:transparent #fff transparent transparent; /* transparent 设置边框颜色透明 */
+    }
+  }
+ }
+
+
+.upload_picture .el-button--success{
+    padding: 10px;
+}
+
+
+
+//.el-dialog__wrapper,.v-modal{
+//  left: 198px;
+//  right: 35px;
+//}
+//.v-modal{
+//  top: 163px;
+//  width: auto;
+//}
+.el-dialog__wrapper{
+    margin-top: 110px;
+}
+
+//表单下提示
+.tips{
+    font-size: 12px;
+    color: #c55f5f;
+    line-height: 0;
+    margin: 5px 0 8px 0;
+}
+
+
+//el-switch选择滑块
+.el-switch__label {
+  height:  inherit;
+}
+
+//步骤条描述
+.el-step.is-center .el-step__description{
+    padding-left:0;
+    padding-right:0;
+}
+
+.el-select .el-input--suffix .el-input__inner{padding-right: 30px;}
+.el-date-editor .el-input__inner{padding-right: 25px;}
+
+.el-menu--horizontal{
+    border: 0!important;
+  }
+  
+.from-group-wrapper{
+    padding: 20px 15px!important;
+    margin-bottom: 20px;
+}
+
+//警告按钮
+.el-button--danger{
+    background-color:transparent;
+    border-color: #f56c6c!important;
+    color: #f56c6c!important;
+}
+.el-button--danger:hover,.el-button--danger:focus{
+    background: #f56c6c!important;
+    color: #fff!important;
+}
+.el-message{
+    top: 70px;
+}
+
+//表单3列样式
+.formthree{
+    .demo-form-inline .el-form-item{
+        width: 31.8%!important;
+        .el-form-item__content{
+            width: 60%!important;
+        }
+        .el-select{
+            width: 100%;
+        }
+        .el-date-editor .el-input__inner{
+            padding-right: 18px;
+        }
+        .el-form-item__label{
+            width: 110px!important;
+        }
+    }
+}
+
+//覆盖表单验证成功
+.el-form-item.is-success .el-input__inner, .el-form-item.is-success .el-input__inner:focus, .el-form-item.is-success .el-textarea__inner, .el-form-item.is-success .el-textarea__inner:focus{
+//  border-color:#dcdfe6!important;
+}
+
+
+/* 解决两个连着日期选择期在同一行的布局  在el-form-item 上添加一个父类 加以区分*/
+.short-date-input {
+    .el-date-editor.el-input, .el-date-editor.el-input__inner {
+        width: 88px;
+    }
+}
+
+
+.el-input.is-disabled .el-input__inner,.el-textarea.is-disabled .el-textarea__inner{
+    background-color: #f9f9f9;
+    color: #8c8d90;
+}
+
+.el-autocomplete-suggestion li{
+    font-size: 12px;
+}
+
+.detailbox .purchasebody{
+    li{
+        .el-form--inline .el-form-item__content{
+            width: 100%!important;
+        }
+    }
+}
+

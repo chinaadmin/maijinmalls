@@ -1,0 +1,80 @@
+@import "src/styles/mixin.scss";
+@import "src/styles/variables.scss";
+.process-box {
+	margin: 40px 0 0 0;
+	padding: 0;
+	@include clearfix;
+	width: 100%;
+	background-color: #F5F7FA;
+	.process-item {
+		float: left;
+		width: 24.15%;
+		background-color: #ffffff;
+		margin-right: 10px;
+		margin-bottom: 15px;
+		@include clearfix;
+		.left,.right {
+			float: left;
+		}
+		.left {
+			width: 65%;
+			h6 {
+				margin: 20px 0 4px 16px;
+				padding: 0;
+				color: $dark;
+				font-size: $sixteen;
+				font-weight: 400;
+			}
+			p {
+				margin: 0 0 0 16px;
+				padding: 0;
+				color: $gray;
+				font-size: $twelve;
+				height: 12px;
+				line-height: 1;
+			}
+			.btn-box{
+				margin-top: 30px;
+				padding-bottom: 18px;
+				height: 50px;
+				line-height: 1;
+			}
+
+		}
+		.right {
+			width: 30%;
+			text-align: right;
+			margin-right: 10px;
+			margin-top: 24px;
+			font-size: 80px;
+			font-weight: 600;
+			// margin-right: 20px;
+		}
+	}
+	.success{
+		border-top: 1px solid #5ac58d;
+		.right {
+			color: #eff8f3;
+		}
+	}
+	.active{
+		border-top: 1px solid #4c84ff;
+		.right {
+			color: #eef2ff;
+		}
+	}
+	.future{
+		border-top: 1px solid #ececec;
+		.left {
+			h6 {
+				color: #ececec;
+			}
+			p {
+				color: #ececec;
+			}
+		}
+		.right {
+			color: #f9f9f9;
+		}
+	}
+}

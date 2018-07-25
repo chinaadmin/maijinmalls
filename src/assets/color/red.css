@@ -1,0 +1,41 @@
+/*公用*/
+
+.red-hearder-bg{
+	background-image:-webkit-linear-gradient(0deg, #BF2717, #E13D30)!important;
+}
+
+.tab-component .vux-tab .vux-tab-item.vux-tab-selected{
+	color: #E13D30 !important;
+}
+
+.red-color{
+	color: #E13D30!important;
+}
+.weui-switch:checked, .weui-switch-cp__input:checked ~ .weui-switch-cp__box{
+	background-color:#E2AF4E!important;
+	border-color:#E2AF4E!important;
+}
+.vux-popup-header-right{
+	color: #E13D30 !important;
+}
+.vux-check-icon>.weui-icon-success:before, .vux-check-icon>.weui-icon-success-circle:before{
+	color:#E2AF4E!important;
+}
+/*头部*/
+
+.red-hearder-logo{
+	
+}
+
+/*底部*/
+
+.weui-tabbar__item.weui-bar__item_on .weui-tabbar__icon,
+.weui-tabbar__item.weui-bar__item_on .weui-tabbar__icon>i,
+.weui-tabbar__item.weui-bar__item_on .weui-tabbar__label {
+	color: #E13D30!important;
+}
+
+/*搜索页*/
+.red-hearder-search{
+	background-image:-webkit-linear-gradient(0deg, #BF2717, #E13D30)!important;
+}

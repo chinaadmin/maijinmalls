@@ -1,0 +1,136 @@
+@import "src/styles/variables.scss";
+.audit_box{
+    display: inline-block;
+    width: 32%;
+    margin: 0 18px 18px 0;
+    font-size: 12px;
+    border: 1px solid #EBECED;
+    border-radius: 5px;
+    padding: 10px;
+    position: relative;
+    .danger {
+        .audit_gress {
+            color: #FF5570 !important;
+            border-color: #FF5570 !important;
+        }
+        .audit_descrip {
+            color: #FF5570 !important;
+        }
+    }
+    .audit_waite {
+        .audit_gress {
+            color: #EBECED !important;
+            border-color: #EBECED !important;
+        }
+        .audit_descrip {
+            color:  $gray !important;
+        }
+    }
+    .audit_con{
+        display: flex;
+        position: relative;
+        .audit_gress{
+            width: 90px;
+            height: 90px;
+            font-size: 40px;
+            border: 2px solid #EBECED;
+            text-align: center;
+            line-height: 90px;
+            border-radius: 5px;
+            margin-top: 10px;
+            color: #EBECED;
+            margin-right: 10px;
+        }
+        .review-box {
+            top: 119px;
+            z-index: 3000;
+            border-radius: 4px;
+            position: absolute;
+            padding:10px;
+            width: 105%;
+            left:  -11px;
+            background-color: #fff;
+            .text_area_box{
+                .el-textarea__inner {
+                    background-color: #F5F7FA;
+                    border: none;
+                    border-radius: 0;
+                }
+            }
+            .oparate-box{
+                margin-top: 25px;
+            }
+        }
+    }
+    .audit_descrip{
+        color: $dark;
+        flex: 1;
+        line-height: 12px;
+    }
+    .audit_more{
+        position: absolute;
+        right: 10px;
+        bottom: 10px;
+        transform: rotate(90deg);
+        cursor: pointer;
+    }
+    //审核中
+    .auditing{
+        .audit_gress{
+            border-color: $blue;
+            color: $blue;
+        }
+        .audit_status{
+            color: #FF5570;
+        }
+        .audit_descrip {
+            .fr{
+                color: #FF5570;
+            }
+        }
+    }
+    //已同意
+    .audited{
+        .audit_gress{
+            border-color: #5FC390;
+            color: #5FC390;
+        }
+        .audit_status{
+            color: #5FC390;
+        }
+    }
+}
+.audit_box:nth-child(3n){
+    margin-right: 0;
+}
+.input_two{
+    .el-select{width:49%!important;display: inline-block;}
+}
+.custom_textarea{
+    width: 100%;
+}
+.formthree{
+    .demo-form-inline .el-form-item{
+        width: 31.8%!important;
+        .el-form-item__content{
+            width: 60%!important;
+        }
+        .el-select{
+            width: 100%;
+        }
+        .el-date-editor .el-input__inner{
+            padding-right: 18px;
+        }
+        .el-form-item__label{
+            width: 110px!important;
+        }
+    }
+}
+
+.detailbox .demo-form-inline .el-form-item{
+    margin-bottom: 15px;
+}
+
+.detailbox .demo-form-inline .purchasebody .el-form-item{
+    margin-bottom: 0!important;
+}

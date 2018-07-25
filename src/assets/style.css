@@ -1,0 +1,163 @@
+html {
+	font-size: 62.5%;
+	
+	/*1rem =10px*/
+}
+
+body {
+	font-size: 1em!important;
+	color: #3d3d3d!important;
+	
+}
+
+.bg {
+	width: 100%;
+	height: 100%;
+	background: #f5f5f5;
+	position: absolute;
+}
+
+.realNameAuthentInput {
+	text-align: right;
+}
+
+.realNameAuthentInput input {
+	text-align: right;
+	height: 3rem;
+	line-height: 3rem;
+}
+
+
+/*vux重置*/
+
+/*.weui-cells_checkbox .weui-check:checked + .vux-checklist-icon-checked:before{
+	color:#E2AF4E!important;
+}*/
+.vux-cell-value{
+	color: #3d3d3d!important;
+}
+.vux-popup-picker-value{
+		margin-right: 6%!important;
+	}
+.weui-tabbar__item.weui-bar__item_on .weui-tabbar__icon,
+.weui-tabbar__item.weui-bar__item_on .weui-tabbar__icon>i,
+.weui-tabbar__item.weui-bar__item_on .weui-tabbar__label {
+	color: #CDA254!important;
+}
+
+.weui-tabbar {
+	background: #ffffff!important;
+	padding: 0.5rem 0rem;
+}
+
+.weui-input {
+	height: 3rem!important;
+	line-height: 3rem!important;
+}
+
+.vux-x-input .weui-icon {
+	position: absolute;
+	right: 3.1rem;
+	top: 1rem
+}
+.weui-icon-clear{
+	position: absolute;
+	top: 1.5rem!important;
+}
+.vux-input-icon.weui-icon-warn:before,
+.vux-input-icon.weui-icon-success:before {
+	font-size: 16px!important;
+}
+
+.vux-slider > .vux-swiper{
+	height: 45vw!important;
+}
+/*字体颜色*/
+
+
+/*主题色*/
+.c-ffffff{
+	color: #ffffff!important;
+}
+.c-CDA254 {
+	color: #CDA254!important;
+}
+.c-E2AF4E{
+	color: #E2AF4E!important;
+}
+.c-E72D2F{
+	color: #E72D2F!important;
+}
+.c-E13D30{
+	color:#E13D30!important;
+}
+.c-9A9793 {
+	color: #9A9793!important;
+}
+
+.c-FFBF62 {
+	color: #FFBF62!important;
+}
+
+.c-999999 {
+	color: #999999!important;
+}
+
+.c-666666 {
+	color: #666666!important;
+}
+.c-333333 {
+	color: #333333!important;
+}
+.c-E72D2F {
+	color: #E72D2F!important;
+}
+
+.c-CDA254 {
+	color: #CDA254!important;
+}
+.c-4A4A4A{
+	color: #4A4A4A!important;
+}
+.c-3D3D3D{
+	color: #3D3D3D!important;
+}
+.c-E13D30{
+	color: #c-E13D30!important;
+}
+/*字体大小*/
+.f-6r{
+	font-size: 0.6rem!important;
+}
+
+/*高度*/
+
+.height-3r {
+	height: 3rem;
+}
+
+li {
+	list-style-type: none;
+}
+
+
+/*分隔背景区域*/
+
+.separateBg {
+	height: 1rem;
+	background: #f5f5f5;
+}
+.com-position{
+	width: 100%; 
+	position: relative;
+	min-height: 100px;
+}
+
+.com-ellipsis{
+	overflow: hidden;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+}
+.paddingTop45{
+	padding-top: 45px;
+}
